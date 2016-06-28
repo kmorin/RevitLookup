@@ -1,5 +1,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevitLookup", "2016\RevitLookup.csproj", "{05C77115-2277-4DFC-8F95-BE37E5F1130F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2016", "2016", "{20206786-2A90-473C-B320-3F3656D9C115}"
@@ -14,6 +16,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2014", "2014", "{6A4B7923-8
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevitLookup", "2014\RevitLookup.csproj", "{35DB277D-45CF-4A52-A3CA-E67B9BD43BD4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevitLookup", "2017\RevitLookup.csproj", "{813B80CE-E5CF-4C31-92EE-A42ADDC4BD69}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug (For Release build of Revit)|Any CPU = Debug (For Release build of Revit)|Any CPU
@@ -21,6 +25,7 @@ Global
 		Debug-2014|Any CPU = Debug-2014|Any CPU
 		Debug-2015|Any CPU = Debug-2015|Any CPU
 		Debug-2016|Any CPU = Debug-2016|Any CPU
+		Debug-2017|Any CPU = Debug-2017|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
@@ -34,6 +39,8 @@ Global
 		{05C77115-2277-4DFC-8F95-BE37E5F1130F}.Debug-2015|Any CPU.Build.0 = Debug-2016|Any CPU
 		{05C77115-2277-4DFC-8F95-BE37E5F1130F}.Debug-2016|Any CPU.ActiveCfg = Debug-2016|Any CPU
 		{05C77115-2277-4DFC-8F95-BE37E5F1130F}.Debug-2016|Any CPU.Build.0 = Debug-2016|Any CPU
+		{05C77115-2277-4DFC-8F95-BE37E5F1130F}.Debug-2017|Any CPU.ActiveCfg = Debug-2016|Any CPU
+		{05C77115-2277-4DFC-8F95-BE37E5F1130F}.Debug-2017|Any CPU.Build.0 = Debug-2016|Any CPU
 		{05C77115-2277-4DFC-8F95-BE37E5F1130F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05C77115-2277-4DFC-8F95-BE37E5F1130F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1F48800B-414C-4CFC-B7D9-6D257BD7DC2C}.Debug (For Release build of Revit)|Any CPU.ActiveCfg = Debug (For Release build of Revit)|Any CPU
@@ -44,8 +51,10 @@ Global
 		{1F48800B-414C-4CFC-B7D9-6D257BD7DC2C}.Debug-2014|Any CPU.Build.0 = Debug-2015|Any CPU
 		{1F48800B-414C-4CFC-B7D9-6D257BD7DC2C}.Debug-2015|Any CPU.ActiveCfg = Debug-2015|Any CPU
 		{1F48800B-414C-4CFC-B7D9-6D257BD7DC2C}.Debug-2015|Any CPU.Build.0 = Debug-2015|Any CPU
-		{1F48800B-414C-4CFC-B7D9-6D257BD7DC2C}.Debug-2016|Any CPU.ActiveCfg = Debug|Any CPU
-		{1F48800B-414C-4CFC-B7D9-6D257BD7DC2C}.Debug-2016|Any CPU.Build.0 = Debug|Any CPU
+		{1F48800B-414C-4CFC-B7D9-6D257BD7DC2C}.Debug-2016|Any CPU.ActiveCfg = Debug-2015|Any CPU
+		{1F48800B-414C-4CFC-B7D9-6D257BD7DC2C}.Debug-2016|Any CPU.Build.0 = Debug-2015|Any CPU
+		{1F48800B-414C-4CFC-B7D9-6D257BD7DC2C}.Debug-2017|Any CPU.ActiveCfg = Debug-2015|Any CPU
+		{1F48800B-414C-4CFC-B7D9-6D257BD7DC2C}.Debug-2017|Any CPU.Build.0 = Debug-2015|Any CPU
 		{1F48800B-414C-4CFC-B7D9-6D257BD7DC2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F48800B-414C-4CFC-B7D9-6D257BD7DC2C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{35DB277D-45CF-4A52-A3CA-E67B9BD43BD4}.Debug (For Release build of Revit)|Any CPU.ActiveCfg = Debug (For Release build of Revit)|Any CPU
@@ -54,12 +63,28 @@ Global
 		{35DB277D-45CF-4A52-A3CA-E67B9BD43BD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35DB277D-45CF-4A52-A3CA-E67B9BD43BD4}.Debug-2014|Any CPU.ActiveCfg = Debug-2014|Any CPU
 		{35DB277D-45CF-4A52-A3CA-E67B9BD43BD4}.Debug-2014|Any CPU.Build.0 = Debug-2014|Any CPU
-		{35DB277D-45CF-4A52-A3CA-E67B9BD43BD4}.Debug-2015|Any CPU.ActiveCfg = Debug (For Release build of Revit)|Any CPU
-		{35DB277D-45CF-4A52-A3CA-E67B9BD43BD4}.Debug-2015|Any CPU.Build.0 = Debug (For Release build of Revit)|Any CPU
-		{35DB277D-45CF-4A52-A3CA-E67B9BD43BD4}.Debug-2016|Any CPU.ActiveCfg = Debug (For Release build of Revit)|Any CPU
-		{35DB277D-45CF-4A52-A3CA-E67B9BD43BD4}.Debug-2016|Any CPU.Build.0 = Debug (For Release build of Revit)|Any CPU
+		{35DB277D-45CF-4A52-A3CA-E67B9BD43BD4}.Debug-2015|Any CPU.ActiveCfg = Debug-2014|Any CPU
+		{35DB277D-45CF-4A52-A3CA-E67B9BD43BD4}.Debug-2015|Any CPU.Build.0 = Debug-2014|Any CPU
+		{35DB277D-45CF-4A52-A3CA-E67B9BD43BD4}.Debug-2016|Any CPU.ActiveCfg = Debug-2014|Any CPU
+		{35DB277D-45CF-4A52-A3CA-E67B9BD43BD4}.Debug-2016|Any CPU.Build.0 = Debug-2014|Any CPU
+		{35DB277D-45CF-4A52-A3CA-E67B9BD43BD4}.Debug-2017|Any CPU.ActiveCfg = Debug-2014|Any CPU
+		{35DB277D-45CF-4A52-A3CA-E67B9BD43BD4}.Debug-2017|Any CPU.Build.0 = Debug-2014|Any CPU
 		{35DB277D-45CF-4A52-A3CA-E67B9BD43BD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35DB277D-45CF-4A52-A3CA-E67B9BD43BD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{813B80CE-E5CF-4C31-92EE-A42ADDC4BD69}.Debug (For Release build of Revit)|Any CPU.ActiveCfg = Debug (For Release build of Revit)|Any CPU
+		{813B80CE-E5CF-4C31-92EE-A42ADDC4BD69}.Debug (For Release build of Revit)|Any CPU.Build.0 = Debug (For Release build of Revit)|Any CPU
+		{813B80CE-E5CF-4C31-92EE-A42ADDC4BD69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{813B80CE-E5CF-4C31-92EE-A42ADDC4BD69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{813B80CE-E5CF-4C31-92EE-A42ADDC4BD69}.Debug-2014|Any CPU.ActiveCfg = Debug (For Release build of Revit)|Any CPU
+		{813B80CE-E5CF-4C31-92EE-A42ADDC4BD69}.Debug-2014|Any CPU.Build.0 = Debug (For Release build of Revit)|Any CPU
+		{813B80CE-E5CF-4C31-92EE-A42ADDC4BD69}.Debug-2015|Any CPU.ActiveCfg = Debug-2017|Any CPU
+		{813B80CE-E5CF-4C31-92EE-A42ADDC4BD69}.Debug-2015|Any CPU.Build.0 = Debug-2017|Any CPU
+		{813B80CE-E5CF-4C31-92EE-A42ADDC4BD69}.Debug-2016|Any CPU.ActiveCfg = Debug-2017|Any CPU
+		{813B80CE-E5CF-4C31-92EE-A42ADDC4BD69}.Debug-2016|Any CPU.Build.0 = Debug-2017|Any CPU
+		{813B80CE-E5CF-4C31-92EE-A42ADDC4BD69}.Debug-2017|Any CPU.ActiveCfg = Debug-2017|Any CPU
+		{813B80CE-E5CF-4C31-92EE-A42ADDC4BD69}.Debug-2017|Any CPU.Build.0 = Debug-2017|Any CPU
+		{813B80CE-E5CF-4C31-92EE-A42ADDC4BD69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{813B80CE-E5CF-4C31-92EE-A42ADDC4BD69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -68,5 +93,6 @@ Global
 		{05C77115-2277-4DFC-8F95-BE37E5F1130F} = {20206786-2A90-473C-B320-3F3656D9C115}
 		{1F48800B-414C-4CFC-B7D9-6D257BD7DC2C} = {14038771-3A90-4FA4-99C6-D94221C0F337}
 		{35DB277D-45CF-4A52-A3CA-E67B9BD43BD4} = {6A4B7923-80CE-40BA-8A1F-03F3357D9A70}
+		{813B80CE-E5CF-4C31-92EE-A42ADDC4BD69} = {CC5BE41F-F546-409E-BDB5-FA04E7D6780A}
 	EndGlobalSection
 EndGlobal
